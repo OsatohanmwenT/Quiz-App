@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    font-family: "Karla", sans-serif;
+}
+
+body{
+    background-color: rgba(26, 26, 26, 0.927);
+    min-height: 100vh;
+}
+
+.start{
+    background-image: url("./assets/blobs-blue.svg"), url("./assets/blobs.svg");
+    background-position: bottom left , top right;
+    background-repeat:  no-repeat;
+    background-size: 250px;
+}
