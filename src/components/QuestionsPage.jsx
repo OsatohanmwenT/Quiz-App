@@ -18,7 +18,7 @@ export default function QuestionsPage({ questions, text, setPageNumber, handlePa
             </div>
             {checked ? 
             <button onClick={() => playGame()} className="bg-blue px-10 self-center text-background-blue py-3 rounded-xl">Play again</button> 
-            : <button onClick={() => handlePageChange()} className="bg-blue px-10 self-center text-background-blue py-3 rounded-xl mb-3">{text}</button>
+            : <button onClick={() => handlePageChange()} className="bg-blue px-10 self-center text-background-blue py-3 rounded-xl">{text}</button>
             }
             {checked && <p className='self-center text-dark-blue font-semibold text-lg'>You scored {score}/15 correct answers</p>}
             {incomplete && <p className='self-center text-red font-semibold text-lg'>Answer All Questions</p> }
